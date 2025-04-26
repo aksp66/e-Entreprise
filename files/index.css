@@ -125,6 +125,10 @@ nav ul li:hover {
   display: none;
 }
 
+.wrapper .visually-hidden {
+  display: none;
+}
+
 .glass {
   position: absolute;
   top: 0;
