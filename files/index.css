@@ -1,0 +1,248 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(227, 158, 158);
+  height: 80px;
+  align-items: center;
+  padding: 0 10px;
+  position: fixed;
+  top: 0px;
+  left: 5px;
+  right: 5px;
+  z-index: 1000;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding-right: 60px;
+  gap: 12px;
+  align-items: center;
+}
+
+nav ul li {
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+nav ul li:hover {
+  background-color: white;
+  height: 60px;
+  text-align: center;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 60px;
+}
+
+.img_logo {
+  width: 100%;
+  height: 100%;
+}
+
+.section_wrapper {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: relative;
+  height: 500px;
+  width: 95%;
+  overflow: hidden;
+}
+
+.wrapper .img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.wrapper .img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+  object-position: center;
+  transition: all 0.5s ease;
+}
+
+#one:checked ~ .img1 {
+  opacity: 1;
+  z-index: 0;
+  pointer-events: auto;
+}
+
+#two:checked ~ .img2 {
+  opacity: 1;
+  z-index: 1;
+  pointer-events: auto;
+}
+
+.wrapper .sliders {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  display: flex;
+}
+
+.wrapper .sliders label {
+  height: 13px;
+  width: 13px;
+  border: 2px solid rgb(227, 158, 158);
+  margin: 0 3px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+#one:checked ~ .sliders label.one,
+#two:checked ~ .sliders label.two {
+  background-color: rgb(227, 158, 158);
+  width: 35px;
+  border-radius: 14px;
+}
+
+.sliders label:hover {
+  background-color: rgb(227, 158, 158);
+}
+
+.wrapper input[type="radio"] {
+  display: none;
+}
+
+.glass {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(149, 145, 145, 0.146);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  z-index: 2;
+}
+.glass h2 {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.glass p {
+  font-size: 24px;
+}
+
+.section_paragh {
+  display: flex;
+  height: auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.paragh {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  gap: 30px;
+  padding-top: 20px;
+}
+
+.div_paragh {
+  width: calc((100%-20px) / 2);
+  height: fit-content;
+}
+
+.element_one {
+  color: rgb(215, 40, 40);
+  font-size: 25px;
+}
+
+.text {
+  padding-bottom: 20px;
+  text-align: justify;
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  background: none;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.services_section {
+  width: 95%;
+  height: 500px;
+  justify-content: center;
+  overflow: hidden !important;
+}
+
+.div_one_services {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden !important;
+}
+
+.image_services_section {
+  width: 100%;
+  height: calc((100% * 2) / 3);
+  overflow: hidden !important;
+}
+
+.image_services {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+  object-position: center;
+}
+
+.font_white_services_section {
+  background-color: white;
+  width: 100%;
+  height: calc(100% / 3);
+}
+
+.services {
+  position: absolute;
+  width: 95%;
+  height: 500px;
+  background: rgba(34, 33, 33, 0.178);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-align: center;
+  margin-left: 40px;
+  z-index: 2;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-Entreprise</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img class="img_logo" src="/images/logo_business.png" alt="" />
+      </div>
+
+      <ul class="element_nav">
+        <li>HOME</li>
+        <li>ABOUT US</li>
+        <li>SERVICES</li>
+        <li>PORTFOLIO</li>
+        <li>PRICING</li>
+        <li>CONTACT</li>
+      </ul>
+    </nav>
+
+    <section class="section_wrapper">
+      <div class="wrapper">
+        <input type="radio" name="slide" id="one" checked />
+        <input type="radio" name="slide" id="two" />
+
+        <div class="img img1">
+          <img src="/images/bacground1.png" alt="" />
+          <div class="glass">
+            <h2>Bienvenue chez nous</h2>
+            <p>Votre partenaire de confiance</p>
+          </div>
+        </div>
+
+        <div class="img img2">
+          <img src="/images/background.png" alt="" />
+          <div class="glass">
+            <h2>Nos services</h2>
+            <p>Innovation et performance</p>
+          </div>
+        </div>
+
+        <div class="sliders">
+          <label for="one" class="one"></label>
+          <label for="two" class="two"></label>
+        </div>
+      </div>
+    </section>
+
+    <section class="section_paragh">
+      <div class="paragh">
+        <div class="div_paragh one_div_son">
+          <div class="element_div_one">
+            <h2 class="element_one">Who we are</h2>
+          </div>
+
+          <div class="element_div_one">
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+              commodi, ad accusantium minima qui eius ipsum earum corrupti sed
+              provident quo, nostrum magni aliquam labore ipsam. Libero quod rem
+              sed! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+              iure reprehenderit eum enim dicta atque, a eveniet ipsam
+              repellendus perspiciatis id, similique ea accusantium sunt eaque
+              nostrum doloribus praesentium. Magnam.
+            </p>
+          </div>
+
+          <div class="element_div_one">
+            <button class="btn">More details</button>
+          </div>
+        </div>
+
+        <div class="div_paragh two_div_son">
+          <div class="element_div_one">
+            <h2 class="element_one">Our Mission</h2>
+          </div>
+
+          <div class="element_div_one">
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+              commodi, ad accusantium minima qui eius ipsum earum corrupti sed
+              provident quo, nostrum magni aliquam labore ipsam. Libero quod rem
+              sed! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+              iure reprehenderit eum enim dicta atque, a eveniet ipsam
+              repellendus perspiciatis id, similique ea accusantium sunt eaque
+              nostrum doloribus praesentium. Magnam.
+            </p>
+          </div>
+
+          <div class="element_div_one">
+            <button class="btn">More details</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services_section">
+      <div class="div_one_services">
+        <div class="image_services_section">
+          <img class="image_services" src="/images/teamwork.png" alt="" />
+        </div>
+
+        <div class="font_white_services_section"></div>
+
+        <div class="services">
+          <h2 class="title_services">Our Services</h2>
+          <p class="desc_services">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+            maiores quis, magni repellat at laborum vero ea fugit culpa, ut
+            autem. Ex ipsa, tempora odit alias architecto aspernatur voluptates
+            adipisci?
+          </p>
+          <div class="services_cards_global">
+            <div class="services_cards"></div>
+            <div class="services_cards"></div>
+            <div class="services_cards"></div>
+            <div class="services_cards"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      let index = 1;
+      setInterval(() => {
+        index = index === 1 ? 2 : 1;
+        document.getElementById(index === 1 ? "one" : "two").checked = true;
+      }, 7000);
+    </script>
+  </body>
+</html>
