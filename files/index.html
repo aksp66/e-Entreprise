@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>e-Entreprise</title>
     <link rel="stylesheet" href="index.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/images/logo_business.png" type="image/png" />
   </head>
   <body>
     <nav>
@@ -173,7 +173,7 @@
 
     <section class="learn_about_section">
       <div class="div_one_learn">
-        <div class="son_learn .son_img_learn">
+        <div class="son_learn son_img_learn">
           <img src="/images/business_team.png" alt="" class="img_team_learn" />
         </div>
         <div class="son_learn son_text_learn">
@@ -196,13 +196,13 @@
     <section class="comments_section">
       <div class="div_one_comments">
         <input type="radio" name="comments" id="one_comms" checked />
-        <label for="one_comms" class="one_comms">comm</label>
+        <label for="one_comms" class="one_comms lb_input">comm</label>
         <input type="radio" name="comments" id="two_comms" />
-        <label for="two_comms" class="two_comms">comm</label>
+        <label for="two_comms" class="two_comms lb_input">comm</label>
         <input type="radio" name="comments" id="three_comms" />
-        <label for="three_comms" class="three_comms">comm</label>
+        <label for="three_comms" class="three_comms lb_input">comm</label>
         <input type="radio" name="comments" id="four_comms" />
-        <label for="four_comms" class="four_comms">comm</label>
+        <label for="four_comms" class="four_comms lb_input">comm</label>
 
         <div class="elements_comments comments_one">
           <p>
@@ -222,7 +222,7 @@
             eligendi obcaecati distinctio.
           </p>
 
-          <span>John Doe</span>
+          <span>Ivan Michael</span>
         </div>
         <div class="elements_comments comments_three">
           <p>
@@ -232,7 +232,7 @@
             eligendi obcaecati distinctio.
           </p>
 
-          <span>John Doe</span>
+          <span>Leonard DuChemin</span>
         </div>
         <div class="elements_comments comments_four">
           <p>
@@ -242,7 +242,7 @@
             eligendi obcaecati distinctio.
           </p>
 
-          <span>John Doe</span>
+          <span>Casse-Tête Jean</span>
         </div>
 
         <div class="comms">
@@ -254,12 +254,104 @@
       </div>
     </section>
 
+    <footer>
+      <div class="div_footer_one">
+        <div class="div_footer_son first">
+          <div class="title_footer">Our contact</div>
+          <p class="descfooter">
+            e-Entreprise JC Main Road, <br />
+            Near Silnile tower <br />Pin-21542 NewYork US.
+          </p>
+          <p class="descfooter">
+            (123) 456-789 - 1255-12584 <br />email@domainname.com
+          </p>
+        </div>
+
+        <div class="div_footer_son second">
+          <div class="title_footer">Quick Links</div>
+          <p class="descfooter">Latest Events</p>
+          <p class="descfooter">Terms and conditions</p>
+          <p class="descfooter">Privacy policy</p>
+          <p class="descfooter">Career</p>
+          <p class="descfooter">Contact us</p>
+        </div>
+
+        <div class="div_footer_son third">
+          <div class="title_footer">Last Post</div>
+          <p class="descfooter">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </p>
+          <p class="descfooter">
+            Pellentesque et pulvinar enim. Quisque at tempor ligula
+          </p>
+          <p class="descfooter">
+            Natus error sit voluptatem accusantium doloremque
+          </p>
+        </div>
+
+        <div class="div_footer_son fourth">
+          <div class="title_footer">Recent News</div>
+          <p class="descfooter">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </p>
+          <p class="descfooter">
+            Pellentesque et pulvinar enim. Quisque at tempor ligula
+          </p>
+          <p class="descfooter">
+            Natus error sit voluptatem accusantium doloremque
+          </p>
+        </div>
+      </div>
+
+      <div class="div_footer_two">
+        <div class="two_footer_son two_one">
+          <p>e-Entreprise &copy; April 2025. All rights reserved.</p>
+        </div>
+        <div class="two_footer_son two_two">
+          <p>Follow us on:</p>
+          <div class="icons_footer">
+            <div class="icons_footers_div">
+              <img src="/images/facebook.svg" alt="" class="icons" />
+            </div>
+            <div class="icons_footers_div">
+              <img src="/images/twitter.svg" alt="" class="icons" />
+            </div>
+            <div class="icons_footers_div">
+              <img src="/images/instagram.svg" alt="" class="icons" />
+            </div>
+            <div class="icons_footers_div">
+              <img src="/images/linkedin.svg" alt="" class="icons" />
+            </div>
+            <div class="icons_footers_div">
+              <img src="/images/whatsapp.svg" alt="" class="icons" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script>
       let index = 1;
       setInterval(() => {
         index = index === 1 ? 2 : 1;
         document.getElementById(index === 1 ? "one" : "two").checked = true;
       }, 7000);
+    </script>
+
+    <script>
+      let index_1 = 1;
+      setInterval(() => {
+        index_1 = index_1 === 1 ? 2 : index_1 === 2 ? 3 : index_1 === 3 ? 4 : 1;
+        document.getElementById(
+          index_1 === 1
+            ? "one_comms"
+            : index_1 === 2
+            ? "two_comms"
+            : index_1 === 3
+            ? "three_comms"
+            : "four_comms"
+        ).checked = true;
+      }, 5000);
     </script>
   </body>
 </html>
